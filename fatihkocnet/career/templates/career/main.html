@@ -1,0 +1,287 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="tr">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter50812864 = new Ya.Metrika2({
+                    id:50812864,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50812864" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Ağırlıklı olarak Linux Sistem Yönetimi ve DevOps konularında kendimi geliştirirken bir yandan da insanlara, özellikle de yeni başlayanlara aktarmaya çalışıyorum. ">
+	<meta name="author" content="Fatih Koç">
+
+	<link type="text/css" href="https://fonts.googleapis.com/css?family=Lobster|Montserrat|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+	<link rel="shortcut icon" href="{% static 'career/images/logo.png' %}" />
+	<title>Fatih Koç - Freelance DevOps Mühendisi</title>
+
+	<!-- CSS -->
+	<link href="{% static 'career/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'career/css/font-awesome.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'career/css/animate.css" rel="stylesheet' %}">
+
+	<!-- Custom styles CSS -->
+	<link href="{% static 'career/css/style.css' %}" rel="stylesheet" media="screen">
+
+    <script src="{% static 'career/js/modernizr.custom.js' %}"></script>
+
+</head>
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+    <div class="home-overlay"></div>
+		<div class="intro">
+			<div class="start">Merhaba, ben Fatih Koç
+			<h1>DevOps Mühendisi</h1>
+			<div class="start">olarak kendimi geliştirmeye ve öğrendiklerimi aktarmaya çalışıyorum.</div>
+		</div>
+
+		<a href="#services">
+			<div class="scroll-down">
+				<span>
+					<i class="fa fa-angle-down fa-2x"></i>
+				</span>
+			</div>
+		</a>
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand">Fatih Koç</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Anasayfa</a></li>
+						<li><a href="#services">Hakkımda</a></li>
+            <li><a href="#blog">Blog</a></li>
+						<li><a href="#contact">Projeler</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+
+  <!-- Services start -->
+
+	<section id="services" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-8">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">HAKKIMDA</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							<p>Uzun süre oyun ve teknoloji sektörüne haber yazıp özel içerikler hazırladım. Şimdi ise kendimi Linux Sistem Yöneticiliği ve DevOps alanlarında ilerletmek adına çalışmalar yapıp bir yandan da freelance işlerle kendimi geliştirmekteyim.</p>
+							<p>Ziyaret etmekte olduğunuz site bulut bilişim altyapıları kullanılarak adım adım geliştirilmek üzere tasarlanmıştır. Yaptığım geliştirmeleri güncel olarak Medium sayfamda ve burada paylaşmaktayım. Öğrendiğim birçok şeyi de blog aracılığıyla insanlarla paylaşıyorum.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4">
+					<div class="pfblock-header wow fadeInUp">
+						<img id="myphoto" src="{% static 'career/images/fatihkoc.jpg' %}" alt="Fatih Koç" style="border-radius: 100%;filter:grayscale(30%);">
+					</div>
+				</div>
+		</div><!-- .container -->
+
+		<div class="skills col-xs-12">
+				<h2 class="pfblock-title">Yeteneklerim</h2>
+				<div class="pfblock-line"></div>
+
+				<div class="row">
+					<div  class="devicon-linux-plain  col-xs-15"><span>GNU/LINUX</span></div>
+					<div  class="devicon-nginx-plain   col-xs-15"><span>NGINX</span></div>
+					<div  class="devicon-postgresql-plain col-xs-15"><span>POSTGRESQL</span></div>
+					<div  class="devicon-python-plain col-xs-15"><span>PYTHON</span></div>
+					<div  class="devicon-django-plain  col-xs-15"><span>DJANGO</span></div>
+					<div  class="devicon-docker-plain  col-xs-15"><span>DOCKER</span></div>
+					<div  class="devicon-csharp-plain  col-xs-15"><span>C#</span></div>
+					<div  class="devicon-html5-plain  col-xs-15"><span>HTML5</span></div>
+					<div  class="devicon-css3-plain  col-xs-15"><span>CSS3</span></div>
+					<div  class="devicon-wordpress-plain  col-xs-15"><span>WORDPRESS</span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services end -->
+	<!-- Blog start -->
+
+		<section id="blog" class="pfblock">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-sm-6 col-sm-offset-3">
+
+						<div class="pfblock-header wow fadeInUp">
+							<h2 class="pfblock-title">Blog</h2>
+							<div class="pfblock-line"></div>
+							<div class="pfblock-subtitle">
+
+							</div>
+						</div>
+
+					</div>
+
+				</div><!-- .row -->
+
+				<div class="row">
+
+					<blockquote class="embedly-card"><h4><a href="https://medium.com/@kyrovin7/test-2b31e2ae6cbc">Test - Fatih Koç - Medium</a></h4><p>Test. "Test" is published by Fatih Koç</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+			</div><!-- .contaier -->
+
+		</section>
+
+	<!-- Blog end -->
+	<!-- CallToAction start -->
+
+	<section class="calltoaction">
+		<div class="container-fluid">
+
+			<div class="row">
+
+				<div class="col-md-12 col-lg-12">
+					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+						Peki daha önce neler yaptım?
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+					<a href="https://drive.google.com/open?id=1wiBl6J2OV_CFculrE7WwT6dPfzfYRPay" class="btn btn-lg">Özgeçmişimi incele!</a>
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- CallToAction end -->
+
+
+	<!-- Contact start -->
+
+	<section id="contact" class="pfblock">
+		<div class="row">
+
+			<div class="col-sm-6 col-sm-offset-3">
+
+				<div class="pfblock-header">
+					<h2 class="pfblock-title">Projeler</h2>
+					<div class="pfblock-line"></div>
+          <blockquote class="embedly-card" data-card-controls="0"><h4><a href="https://github.com/fatihkc/Django-DevOps-personal-website">fatihkc/Django-DevOps-personal-website</a></h4><p>Django ile geliştirilmiş kişisel sitem. DevOps pratikleri zamanla eklenecektir. - fatihkc/Django-DevOps-personal-website</p></blockquote>
+<script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+          </div>
+
+          </div>
+
+				</div>
+
+			</div>
+
+		</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<p class="copyright"> Email atabilir, GitHub sayfamı kontrol edebilir veya Linkedin profilimi ziyaret edebilirsiniz.</p>
+
+					<ul class="social-links">
+						<li><a href="https://www.linkedin.com/in/fatihhkoc/" class="wow fadeInUp" data-wow-delay=".1s" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+						<li><a href="https://github.com/fatihhkoc" class="wow fadeInUp" data-wow-delay=".2s" target="_blank"><i class="fa fa-github"></i></a></li>
+						<li><a href="mailto:mail@fatihkoc.net" class="wow fadeInUp" data-wow-delay=".4s"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+
+	<!-- Javascript files -->
+
+	<script src="{% static 'career/js/jquery-1.11.1.min.js' %}"></script>
+	<script src="{% static 'career/bootstrap/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'career/js/jquery.parallax-1.1.3.js' %}"></script>
+	<script src="{% static 'career/js/imagesloaded.pkgd.js' %}"></script>
+	<script src="{% static 'career/js/jquery.sticky.js' %}"></script>
+	<script src="{% static 'career/js/smoothscroll.js' %}"></script>
+	<script src="{% static 'career/js/wow.min.js' %}"></script>
+  <script src="{% static 'career/js/waypoints.min.js' %}"></script>
+  <script src="{% static 'career/js/jquery.cbpQTRotator.js' %}"></script>
+	<script src="{% static 'career/js/custom.js' %}"></script>
+
+</body>
+</html>
