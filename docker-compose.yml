@@ -20,17 +20,20 @@ services:
       - db
     volumes:
       - ./fatihkocnet:/fatihkocnet
-      - ./config/nginx:/etc/nginx/conf.d
     ports:
       - "8000:8000"
 
-  nginx:
+  nginx-ssl-proxy:
+    image: danieldent/nginx-ssl-proxy
     restart: always
-    image: nginx:latest
+    environment:
+      UPSTREAM: 127.0.0.1:8080
+      SERVERNAME: localhost.example.com
     ports:
       - "80:80"
+      - "443:443"
     volumes:
-      - ./fatihkocnet:/fatihkocnet
+      - "/etc/letsencrypt"
       - ./config/nginx:/etc/nginx/conf.d
     depends_on:
       - web
