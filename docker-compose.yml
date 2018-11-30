@@ -28,7 +28,8 @@ services:
     restart: always
     environment:
       UPSTREAM: 127.0.0.1:8080
-      SERVERNAME: localhost.example.com
+      SERVERNAME: fatihkoc.net
+      EXTRANAMES: www.fatihkoc.net
     ports:
       - "80:80"
       - "443:443"
