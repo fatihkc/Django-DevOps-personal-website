@@ -14,14 +14,14 @@ Let's Encrypt
 
 ## Manage Settings
 
-####Change servername
+#### Change servername
 
 
 In docker-compose.yml and config/nginx/fatihkocnet.conf we have servername properties. If you want to deploy it in your local machine, change fatihkoc.net with localhost.  
 **Warning **Be careful about it. Let's Encrypt allows you to create 10 certificates per week. Don't waste it while you are trying to deploy for test purposes.
 
 
-####Change Database Credentials
+#### Change Database Credentials
 
 You can change database credentials in docker-compose.yml. You must change fatihkocnet/fatihkocnet/settings.py as well for database connections.
 
