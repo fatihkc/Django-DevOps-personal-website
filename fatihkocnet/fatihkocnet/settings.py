@@ -132,7 +132,7 @@ STATIC_ROOT = '/static/'
 
 # For sending emails
 EMAIL_USE_TLS = True
-EMAIL_HOST ='smtp.yandex.com.tr'
-EMAIL_HOST_USER = 'mail@fatihkoc.net'
+EMAIL_HOST ='smtp.google.com'
+EMAIL_HOST_USER = 'kyrovin7@gmail.com'
 EMAIL_HOST_PASSWORD = '***'
-EMAIL_PORT = 465
+EMAIL_PORT = 587
