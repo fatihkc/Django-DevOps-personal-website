@@ -129,3 +129,10 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATIC_ROOT = '/static/'
+
+# For sending emails
+EMAIL_USE_TLS = True
+EMAIL_HOST ='smtp.yandex.com.tr'
+EMAIL_HOST_USER = 'mail@fatihkoc.net'
+EMAIL_HOST_PASSWORD = '***'
+EMAIL_PORT = 465
